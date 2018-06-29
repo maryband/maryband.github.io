@@ -151,11 +151,8 @@ header nav ul li a:active{
 	align-items:center;
 }
 
-.contact::after{
-	width:36px;
-	height: 2px;
-	background-color:#10c9c3;
-}
+.form{
+	margin-bottom:50px;
 
 .main-footer{
 	background-color:#000;
