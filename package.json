@@ -1,0 +1,14 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "Personal website of Maria Mysak",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maryband",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

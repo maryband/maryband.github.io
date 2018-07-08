@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header nav {
+    background-color: #10c9c3;
+    margin: 0;
+    display: grid;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.toggle-nav {
+    justify-self: end;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.toggle-nav img{
+    width: 50px;
+    height: 50px;
+}
+
+header nav ul {
+    display: none;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+    transition: 500ms ease;
+}
+
+header nav ul li a:hover {
+    background-color: #71e4e0;
+    ; }
+
+header nav ul li a:active {
+    background-color: #92e5e2;
+}
+
+.section-header {
+    margin: 50px 0 30px 0;
+    font-size: 40px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lead-photo {
+    margin-top: 74px;
+    line-height: 0;
+    position: relative;
+}
+
+.lead-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.lead-photo .text-overlay {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-overlay h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.about-me {
+    background: url("../img/arab_tile.png");
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.about-me-photo img {
+    width: 100px;
+    height: 100px;
+}
+
+.about-me h2 {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-me-text p {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 30px 20px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+ /* body, #slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .wrap {
+    max-width: 1024px;
+    position: relative;
+    line-height: 0;
+  }
+
+.slider-content{
+    width: 100%;
+    
+}
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  span{
+    display: none;
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .slide1{
+    background-image: url("../img/slider-first.jpg")
+  }
+  
+  .slide2{
+    background-image: url("../img/slider-second.jpg")
+  }
+  
+  .slide3{
+    background-image: url("../img/slider-third.jpg")
+  }
+  
+  .slide4{
+    background-image: url("../img/slider-fourth.jpg")
+  }
+  
+  .slide5{
+    background-image: url("../img/slider-fifth.jpg")
+  }
+  
+  .arrow{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  #arrow-left{
+    border-width: 30px 40px 30px 0;
+    left:0;
+    border-color: transparent #fff transparent transparent;
+    margin-left: 30px;
+  }
+  
+  #arrow-left:hover{
+    border-color:transparent aqua transparent transparent;
+ 
+} 
+
+  #arrow-right{
+    border-width: 30px 0px 30px 40px;
+    right:0;
+    border-color: transparent transparent transparent #fff;
+    margin-right: 30px;
+  }
+  
+  #arrow-right:hover{
+    border-color:transparent transparent transparent aqua;
+  }  */
+
+#my-skills .skills {
+    width: 100%;
+    height: 200px;
+    background-color: #10c9c3;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+}
+
+.skills img:nth-child(1) {
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+}
+
+.skills img:nth-child(2) {
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+}
+
+.skills img:nth-child(3) {
+    grid-area: item3;
+    justify-self: center;
+    align-self: center;
+}
+
+.skills img:nth-child(4) {
+    grid-area: item4;
+    justify-self: end;
+    align-self: center;
+}
+
+.skills img:nth-child(5) {
+    grid-area: item6;
+    justify-self: start;
+    align-self: center;
+}
+
+.contacts {
+    width: 100%;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts h2 {
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 50px;
+}
+
+.cards-container:last-child {
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 15px;
+    position: relative;
+}
+
+.contact-card img {
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+}
+
+.form {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/form-background.png);
+}
+
+.form-title h2 {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    padding: 15px 10px;
+    color: #000;
+    border: 2px solid #d7dcde;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+form input:hover {
+    border-color: #a2a9ac;
+}
+
+form input:focus {
+    border-color: #56bffb;
+}
+
+form .message {
+    display: block;
+    margin: 30px 0 30px 0;
+    padding: 10px 0 10px 10px;
+    border: 2px solid #d7dcde;
+    outline: none;
+    border-radius: 3px;
+}
+
+form .message:hover {
+    border-color: #a2a9ac;
+}
+
+form .message:focus {
+    border-color: #56bffb;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #000;
+}
+
+button.btn {
+    display: block;
+    padding: 15px 45px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #10c9c3;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+button.btn:hover {
+    background-color: #71e4e0;
+}
+
+button.btn:active {
+    background-color: #92e5e2;
+}
+
+.map {
+    line-height: 0;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.main-footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-footer h2 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.social-btn {
+    font-size: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    text-decoration: none;
+    background: #ccc url("../img/css_sprites.png") no-repeat center;
+    border-radius: 50%;
+}
+
+.social-btn:not(:last-child) {
+    margin-right: 25px;
+}
+
+.social-btn:hover {
+    background-color: #10c9c3;
+}
+
+.social-btn:active {
+    background-color: #92e5e2;
+}
+
+.social-btn-fb {
+    background-position: 3px 1px;
+}
+
+.social-btn-inst {
+    background-position: -41px -42px;
+}
+
+.social-btn-tw {
+    background-position: 4px -40px;
+}
+
+.social-btn-git {
+    background-position: -41px 3px;
+}
+
