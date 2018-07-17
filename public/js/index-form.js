@@ -2,8 +2,8 @@ document.querySelector('.form button')
     .addEventListener('click', sendForm);
 
 function sendForm(e) {
-    const form = document.querySelector('.form');
-    if (true) { 
+    const form = document.querySelector('form.form');
+    if (form.checkValidity()) { 
         e.preventDefault();
         fetch('form', {
             headers: {
