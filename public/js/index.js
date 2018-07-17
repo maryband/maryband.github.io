@@ -1,23 +1,47 @@
 // NAVBAR TOGGLE
+const $window = $(window); 
+const $burgerMenu = $('.toggle-nav');
 const $navUl = $('nav ul');
 
-function toggleNav() {
+const toggleNav = function() {
     $navUl.slideToggle();
-}
+};
+
+const adjustToggleEv = function() {
+    $navUl.off('click');
+    $burgerMenu.off('click');
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $burgerMenu.click(toggleNav);
+        $navUl.click(toggleNav);
+    }  else {
+        $navUl.off('click');
+        $burgerMenu.off('click');
+    }
+};
+
+// on Load
+adjustToggleEv();
+
+// on Resize
+$window.on('resize', function() {
+    adjustToggleEv();
+});
 
 // SMOOTH SCROLL
-$(document).ready(function(){
-	$("#menu").on("click", "a", function (event) {
-		event.preventDefault();
-		let id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: (top - 122)}, 1000);
-	});
+$(document).ready(function() {
+    $("#menu").on("click", "a", function(event) {
+        event.preventDefault();
+        let id = $(this).attr('href')
+          , top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: (top - 122)
+        }, 1000);
+    });
 });
 
 // OWL-CAROUSEL
 $(document).ready(function() {
-
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -39,7 +63,6 @@ $(document).ready(function() {
             }
         }
     });
-
 });
 
 // PHOTO SLIDER
@@ -60,54 +83,3 @@ function carousel() {
     setTimeout(carousel, 2000);
     // Change image every 2 seconds
 }
-
-
-// let sliderImages = document.querySelectorAll(".slide"),
-//   arrowLeft = document.querySelector("#arrow-left"),
-//   arrowRight = document.querySelector("#arrow-right"),
-//   current = 0;
-
-// // Clear all images
-// function reset() {
-//   for (let i = 0; i < sliderImages.length; i++) {
-//     sliderImages[i].style.display = "none";
-//   }
-// }
-
-// // Init slider
-// function startSlide() {
-//   reset();
-//   sliderImages[0].style.display = "block";
-// }
-
-// // Show prev
-// function slideLeft() {
-//   reset();
-//   sliderImages[current - 1].style.display = "block";
-//   current--;
-// }
-
-// // Show next
-// function slideRight() {
-//   reset();
-//   sliderImages[current + 1].style.display = "block";
-//   current++;
-// }
-
-// // Left arrow click
-// arrowLeft.addEventListener("click", function() {
-//   if (current === 0) {
-//     current = sliderImages.length;
-//   }
-//   slideLeft();
-// });
-
-// // Right arrow click
-// arrowRight.addEventListener("click", function() {
-//   if (current === sliderImages.length - 1) {
-//     current = -1;
-//   }
-//   slideRight();
-// });
-
-// startSlide();
