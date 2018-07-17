@@ -7,50 +7,42 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        <link
-            rel="stylesheet"
-            href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-        <link
-            rel="stylesheet"
-            href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/vendor/animate.css">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/media.css">
     </head>
     <body>
         <div class="wrapper">
             <header id="home" class="main-header">
                 <nav class="main-nav" id="menu">
-                    <div class="toggle-nav" onclick="toggleNav()">
+                    <div class="toggle-nav">
                         <img src="img/hamburger.svg" alt="Burger menu">
                     </div>
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <a class="wew" href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#personal-inf">About Me</a>
+                            <a class="wew" href="#personal-inf">About Me</a>
                         </li>
                         <li>
-                            <a href="#my-skills">My Skills</a>
+                            <a class="wew" href="#my-skills">My Skills</a>
                         </li>
                         <li>
-                            <a href="#inetests">Interests</a>
+                            <a class="wew" href="#inetests">Interests</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a class="wew" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <div class="lead-photo">
+            <div class="lead-photo-container">
                 <img src="img/header-photo" alt="Maria Mysak">
                 <div class="text-overlay">
                     <div class="container">
-                        <h2>
-                            Maria Mysak
-                            <br>Personal Portfolio
-
-                        </h2>
+                        <h2>Maria Mysak<br>Personal Portfolio</h2>
                     </div>
                 </div>
             </div>
@@ -75,44 +67,14 @@
                         </div>
                     </div>
                 </div>
-               <div class="slider">
+                <div class="slider-container">
                     <img class="mySlides" src="img/slider-first.jpg" alt="Maria Mysak">
                     <img class="mySlides" src="img/slider-second.jpg" alt="Maria Mysak">
                     <img class="mySlides" src="img/slider-third.jpg" alt="Maria Mysak">
                     <img class="mySlides" src="img/slider-fourth.jpg" alt="Friends">
                     <img class="mySlides" src="img/slider-fifth.jpg" alt="Trips">
+                    <img class="mySlides" src="img/slider-sixth.jpg" alt="Maria Mysak">
                 </div>
-                <!-- <div class="wrap">
-                    <div id="arrow-left" class="arrow"></div>
-                    <div id="arrow-right" class="arrow"></div>
-                    <div id="slider">
-                        <div class="slide slide1">
-                            <div class="slide-content">
-                                <span>First Image</span>
-                            </div>
-                        </div>
-                        <div class="slide slide2">
-                            <div class="slide-content">
-                                <span>Second Image</span>
-                            </div>
-                        </div>
-                        <div class="slide slide3">
-                            <div class="slide-content">
-                                <span>Third Image</span>
-                            </div>
-                        </div>
-                        <div class="slide slide4">
-                            <div class="slide-content">
-                                <span>Fourth Image</span>
-                            </div>
-                        </div>
-                        <div class="slide slide5">
-                            <div class="slide-content">
-                                <span>Fifth Image</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div id="my-skills">
                     <h2 class="section-header" id="skills-header">My Skills</h2>
                     <div class="skills">
@@ -123,7 +85,7 @@
                         <img src="img/photoshop.svg" alt="Photoshop">
                     </div>
                 </div>
-                <div class="inerests">
+                <div class="inerests-container">
                     <h2 class="section-header" id="inetests">Interests</h2>
                     <div class="owl-carousel">
                         <div>
@@ -155,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contacts">
+                <div class="contacts-container">
                     <h2 class="section-header" id="contact">Contacts</h2>
                     <div class="cards-container">
                         <div class="contact-card contact-address">
@@ -191,46 +153,35 @@
                                 <input type="email" name="email" placeholder="YOUR EMAIL" required="required">
                                 <input type="text" name="subject" placeholder="SUBJECT">
                             </div>
-                            <textarea class="message" rows="2" cols="40" placeholder="YOUR MESSAGE"></textarea>
+                            <textarea class="message" rows="5" cols="40" placeholder="YOUR MESSAGE"></textarea>
                         </div>
                         <div class="form-button">
-                            <button class="btn">Send Message</button>
+                            <button class="btn wew">Send Message</button>
                         </div>
                     </form>
                 </div>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5653.638477449324!2d24.00777154543619!3d49.83332707143682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add793d3adf47%3A0xfe35185116493982!2sStepana+Bandery+St%2C+50%2C+L&#39;viv%2C+Lviv+Oblast%2C+79000!5e0!3m2!1sen!2sua!4v1530015337675"
-                        width="1024"
-                        height="450"
-                        style="border:0"
-                        allowfullscreen="allowfullscreen"></iframe>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5653.638477449324!2d24.00777154543619!3d49.83332707143682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add793d3adf47%3A0xfe35185116493982!2sStepana+Bandery+St%2C+50%2C+L&#39;viv%2C+Lviv+Oblast%2C+79000!5e0!3m2!1sen!2sua!4v1530015337675" width="1024" height="450" style="border:0" allowfullscreen="allowfullscreen"></iframe>
                 </div>
             </main>
             <footer class="main-footer">
                 <div class="footer-title">
                     <h2>Let's make friend!</h2>
                 </div>
-                <div class="logo">
-                    <a
-                        class="social-btn social-btn-fb"
-                        href="https://www.facebook.com/maria.mysak"
-                        target="_blank">Facebook</a>
-                    <a
-                        class="social-btn social-btn-inst"
-                        href="https://www.instagram.com/mary_strichka/"
-                        target="_blank">Instagram</a>
+                <div class="logo-container">
+                    <a class="social-btn social-btn-fb" href="https://www.facebook.com/maria.mysak" target="_blank">Facebook</a>
+                    <a class="social-btn social-btn-inst" href="https://www.instagram.com/mary_strichka/" target="_blank">Instagram</a>
                     <a class="social-btn social-btn-tw" href="#">Twitter</a>
-                    <a
-                        class="social-btn social-btn-git"
-                        href="https://github.com/maryband"
-                        target="_blank">GitHub</a>
+                    <a class="social-btn social-btn-git" href="https://github.com/maryband" target="_blank">GitHub</a>
                 </div>
+                <p class="copyright">&copy; 2018 Maria Mysak</p>
             </footer>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/vendor/wew.min.js"></script>
+        <script src="js/animate-init.js"></script>
         <script src="js/index-form.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
